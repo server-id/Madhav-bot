@@ -285,7 +285,12 @@ function onBot({ models: botModel }) {
             if (error) return logger(global.getText('anurag', 'handleListenError', JSON.stringify(error)), 'error');
             if (['presence', 'typ', 'read_receipt'].some(data => data == message.type)) return;
             if (global.config.DeveloperMode == !![]) console.log(message);
-            return listener(message);
+            try {
+                return listener(message);
+            } catch (err) {
+                logger(`Error processing message: ${err.message}`, 'error');
+                console.error('Full error:', err);
+            }
         };
         global.handleListen = loginApiData.listenMqtt(listenerCallback);
         try {

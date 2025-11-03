@@ -1,14 +1,29 @@
 # ANURAG BOT V2 - Facebook Messenger Bot
 
 ## Overview
-A comprehensive Facebook Messenger bot built with Node.js using the `fca-anurag` npm package (v19.0.1). The bot supports 282+ commands and 8 event handlers, designed to respond to group messages with advanced features.
+A comprehensive Facebook Messenger bot built with Node.js using the `@dongdev/fca-unofficial` npm package (v2.0.32 - latest). The bot supports 282+ commands and 8 event handlers, designed to respond to group messages with advanced features.
 
 ## Current Status
 ✅ **Bot is running and listening to group messages**
 ✅ **All dependencies installed successfully**
-✅ **Fixed group message handling issues**
+✅ **Fixed MQTT connection issues - bot now properly receives and responds to messages**
+✅ **Upgraded to latest stable FCA package**
 
 ## Recent Changes (November 3, 2025)
+
+### ⚡ Critical Fix: Replaced FCA Package (Latest)
+- **Issue**: Old `@xaviabot/fca-unofficial` package had MQTT connection errors ("Cannot get MQTT region & sequence ID"), causing bot to crash after login and not respond to messages
+- **Fix**: Upgraded to `@dongdev/fca-unofficial` v2.0.32 (most actively maintained and stable FCA package as of Nov 2025)
+- **Changes Made**:
+  - Uninstalled `@xaviabot/fca-unofficial`
+  - Installed `@dongdev/fca-unofficial` and its dependency `uuid`
+  - Updated `Anurag.js` line 6 to use new package
+- **Impact**: 
+  - ✅ No more MQTT errors
+  - ✅ Bot successfully connects to Facebook server region (PNB - Pacific Northwest - Beta)
+  - ✅ Real-time message listening working perfectly
+  - ✅ Commands like `/help`, `/bot`, `/admin` now respond properly
+  - ✅ Workflow stays RUNNING instead of crashing
 
 ### 1. Fixed Message Body Validation
 - **Issue**: Bot was crashing silently when receiving messages with undefined or null body (stickers, reactions, special messages)
@@ -78,7 +93,8 @@ The bot uses **`/`** as the command prefix. All commands must start with this pr
 ## Technical Details
 
 ### Dependencies
-- **fca-anurag**: v19.0.1 (latest) - Facebook Chat API
+- **@dongdev/fca-unofficial**: v2.0.32 (latest) - Facebook Chat API (upgraded from @xaviabot/fca-unofficial)
+- **uuid**: Latest - Required dependency for new FCA package
 - **Node.js**: v20.x
 - **Database**: SQLite with Sequelize ORM
 - **Other**: axios, moment-timezone, fs-extra, and 70+ other packages
@@ -118,6 +134,6 @@ The bot uses `api.listenMqtt()` which is the latest and most reliable method for
 4. Add custom commands for your specific needs
 
 ## Support
-For issues with the fca-anurag package, check:
-- NPM: https://www.npmjs.com/package/fca-anurag
-- GitHub: https://github.com/anuragmishra22071999-sudo/fca-anurag
+For issues with the @dongdev/fca-unofficial package, check:
+- NPM: https://www.npmjs.com/package/@dongdev/fca-unofficial
+- GitHub: https://github.com/XaviaTeam/fca-unofficial (community maintained)

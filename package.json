@@ -73,6 +73,7 @@
                     "tinyurl": "^1.1.7",
                     "to": "^0.2.9",
                     "to-zalgo": "^1.0.1",
+                    "uuid": "^13.0.0",
                     "vtuber-wiki": "^1.1.5",
                     "websocket-stream": "^5.5.2",
                     "wikijs": "^6.3.3",

@@ -17,7 +17,7 @@ let isActive = true;
 let userLanguage = {};
 
 const BOSS_UID = "61583096049461";
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "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";
 
 const supportedLanguages = {
   bhojpuri: "bho", urdu: "ur", punjabi: "pa", nepali: "ne",

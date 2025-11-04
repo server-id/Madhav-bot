@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "help",
 	version: "1.0.2",
 	hasPermssion: 0,
-	credits: "**Anurag**", // ⬅️ UPDATED
+	credits: "**Madhav**", // ⬅️ UPDATED
 	description: "Beginner's Guide",
 	commandCategory: "system",
 	usages: "[Tên module]",

@@ -1,28 +1,28 @@
 const fs = require("fs");
 module.exports.config = {
-        name: "anurag",
+        name: "madhav",
   version: "1.0.1",
         hasPermssion: 0,
-        credits: "Anurag Mishra", 
-        description: "Anurag bot command",
+        credits: "Madhav urf 🦅Dʌ̈̌ngɛ͜͡rɵ͜͡us kɪng➳ 🩷🪽", 
+        description: "Madhav bot command",
         commandCategory: "no prefix",
-        usages: "anurag",
+        usages: "Madhav",
     cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) 
 
   { 
-    if (this.config.credits != 'Anurag Mishra') {
+    if (this.config.credits != 'Madhav urf 🦅Dʌ̈̌ngɛ͜͡rɵ͜͡us kɪng➳ 🩷🪽') {
         console.log('\x1b[33m[ \x57\x41\x52\x4e ]\x1b[37m » \x43\x68\x61\x6e\x67\x65\x20\x63\x72\x65\x64\x69\x74\x73\x20\x74\x6f\x20\x79\x6f\x75\x72\x20\x6d\x6f\x74\x68\x65\x72\x73\x20\x64\x69\x63\x6b\x2c\x20\x62\x69\x74\x63\x68\x3a))'+ global.config.BOTNAME + ' \x63\x68\x61\x6e\x67\x65\x20\x63\x72\x65\x64\x69\x74\x73\x20\x6d\x6f\x64\x75\x6c\x65\x73 "' + this.config.name + '"');
         return api.sendMessage('[ \x57\x41\x52\x4e ] \x43\x68\x61\x6e\x67\x65\x20\x74\x68\x65\x20\x63\x72\x65\x64\x69\x74\x73\x2c\x20\x77\x72\x69\x74\x65\x20Anurag Mishra\x20\x61\x67\x61\x69\x6e' , event.threadID, event.messageID);
     }
 
         var { threadID, messageID } = event;
-        if (event.body.indexOf("@Anurag Mishra")==0 || event.body.indexOf("@Anurag")==0 || event.body.indexOf("Anurag")==0) {
+        if (event.body.indexOf("@🦅Dʌ̈̌ngɛ͜͡rɵ͜͡us kɪng➳ 🩷🪽")==0 || event.body.indexOf("@🦅Dʌ̈̌ngɛ͜͡rɵ͜͡us kɪng➳ 🩷🪽")==0 || event.body.indexOf("Anurag")==0) {
                 var msg = {
-                                body: "Anurag ✨💖🥀",
-                                attachment: fs.createReadStream(__dirname + `/noprefix/Anurag.png`)
+                                body: "Madhav ✨💖🥀",
+                                attachment: fs.createReadStream(__dirname + `/noprefix/Madhav.png`)
                         }
                         api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💔", event.messageID, (err) => {}, true)

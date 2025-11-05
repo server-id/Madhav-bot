@@ -6,7 +6,7 @@ module.exports.config = {
     description: "War In Chatbox",
     commandCategory: "wargroup",
     usages: "[fyt]",
-    cooldowns: 20,
+    cooldowns: 7,
     dependencies: {
         "fs-extra": "",
         "axios": ""

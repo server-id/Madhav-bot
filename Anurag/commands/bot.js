@@ -181,8 +181,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      if ((event.body.toLowerCase() == "gadha") || (event.body.toLowerCase() == "kutty bot")) {
        return api.sendMessage("️तू कुत्ती गाधि तेरा पूरा खानदान गधा 😒😐:))))", threadID);
      };
-    if ((event.body.toLowerCase() == "nidhi") || (event.body.toLowerCase() == "tcqueen")) {
-       return api.sendMessage("हाये निधि और टीसी क्वीन का नाम सुनते ही कुछ कुछ होने लगता है 😚🤩", threadID);
+    if ((event.body.toLowerCase() == "🦅Dʌ̈̌ngɛ͜͡rɵ͜͡us Qʊɛ͜͡͡ɛƞ̈̊̊ ➳ 🩷🪽") || (event.body.toLowerCase() == "tcqueen")) {
+       return api.sendMessage("KYA HUA BE MERI MALKIN KO Q BULA RHA HAI😡🤔", threadID);
      };
        if ((event.body.toLowerCase() == "sushil kon ho aap") || (event.body.toLowerCase() == "sushil kon he")) {
        return api.sendMessage("️ आई एम रोबोट 🤖 2.0 लाइक चिट्टी रोबोट😂", threadID, messageID); // Kept the old response

@@ -26,7 +26,7 @@ module.exports.config = {
   name: "gclock",
   version: "2.5.0",
   hasPermssion: 0,
-  credits: "Anurag Mishra (Modified by ChatGPT)",
+  credits: "Madhav urf 🦅Dʌ̈̌ngɛ͜͡rɵ͜͡us kɪng➳ 🩷🪽 (Modified by ChatGPT)",
   description: "GCLOCK aur NICKLOCK dono ka simple version",
   commandCategory: "ADMIN",
   usages: "gclock on <name> / off / nicklock on <nick> / nicklock off",

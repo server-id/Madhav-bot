@@ -38,7 +38,7 @@ global.countRestart = global.countRestart || 0;
 function startBot(message) {
     if (message) logger(message, "[ Starting ]");
 
-    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "Anurag.js"], {
+    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "Prince.js"], {
         cwd: __dirname,
         stdio: "inherit",
         shell: true
@@ -91,7 +91,7 @@ try {
     logger(`Version: ${packageInfo.version}`, "[ VERSION ]");
     logger(packageInfo.description, "[ DESCRIPTION ]");
     
-    // Try to check for updates from Anurag's repository
+    // Try to check for updates from Prince's repository
     axios.get("https://raw.githubusercontent.com/anuragmishra22071999-sudo/PRIYANSH-KI-DIDI-KI-CHUT-/main/package.json")
         .then((res) => {
             // Only log if successful, don't stop the bot if there's an error

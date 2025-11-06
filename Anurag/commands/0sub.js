@@ -13,7 +13,7 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	// Keywords: 'Priyansh rajput', 'sub', 'subscribe', 'Priyansh' को 'Prince' से रिप्लेस किया गया है।
-	if (event.body.indexOf("Anurag")==0 || event.body.indexOf("sub")==0 || event.body.indexOf("subscribe")==0 || event.body.indexOf("Prince")==0) {
+	if (event.body.indexOf("Prince")==0 || event.body.indexOf("sub")==0 || event.body.indexOf("subscribe")==0 || event.body.indexOf("Prince")==0) {
 		var msg = {
 				body: "👋For Any Kind Of Help Contact On Telegram  Username 👉 @Anurag_Dev 😇", // ⬅️ UPDATED
 				attachment: fs.createReadStream(__dirname + `/noprefix/sub.mp3`)

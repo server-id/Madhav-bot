@@ -2,7 +2,7 @@ module.exports.config = {
     name: "joinNoti",
     eventType: ["log:subscribe"],
     version: "1.0.1",
-    credits: "**Anurag**", // ⬅️ UPDATED
+    credits: "**prince**", // ⬅️ UPDATED
     description: "Notification of bots or people entering groups with random gif/photo/video",
     dependencies: {
         "fs-extra": "",
@@ -32,7 +32,7 @@ module.exports.run = async function({ api, event }) {
         api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? " " : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
         const fs = require("fs");
 
-        // 👑 NEW, SHORTER, AND UNIQUE BOT WELCOME MESSAGE (Anurag) 👑
+        // 👑 NEW, SHORTER, AND UNIQUE BOT WELCOME MESSAGE (prince) 👑
         const botJoinMsg = `
 ━━━━━━━━━━━━━━━
 🎉 🥳 [ 𝐁𝐎𝐓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 ] 🥳 🎉
@@ -47,8 +47,8 @@ Hello everyone! I'm **${(!global.config.BOTNAME) ? "Your Bot" : global.config.BO
 - Type **${global.config.PREFIX}info** for Admin details.
 
 ⚠️ For any serious issues or custom development:
-Owner: **Anurag** 👑
-Telegram: **@Anurag_Dev**
+Owner: **prince** 👑
+Telegram: **@prince**
 
 Enjoy your time! Have fun! 🤖
 `.trim(); // Using .trim() to clean up whitespace
@@ -75,7 +75,7 @@ Enjoy your time! Have fun! 🤖
             memLength.sort((a, b) => a - b);
             
             // 🚨 OWNER NAME UPDATED IN DEFAULT USER WELCOME MESSAGE 🚨
-            (typeof threadData.customJoin == "undefined") ? msg = "Hello Mr/Miss {name},\n─────────────────\n You're The {soThanhVien}Member ─────────────────\nOf {threadName} Group\n─────────────────\nPlease Enjoy Your Stay\n─────────────────\nAnd Make Lots Of Friends =)\n──────-°°__𝗧𝗿𝘂𝘀𝘁 𝗺e 🔐 °__!!>☁️✨❤️ My Owner  ✦͙͙͙͙❥⃝∗⁎.ʚ **Anurag** ɞ.⁎∗❥⃝**͙✦͙͙͙ ❤️ Love you 😘 ummmma ❤️😍" : msg = threadData.customJoin;
+            (typeof threadData.customJoin == "undefined") ? msg = "Hello Mr/Miss {name},\n─────────────────\n You're The {soThanhVien}Member ─────────────────\nOf {threadName} Group\n─────────────────\nPlease Enjoy Your Stay\n─────────────────\nAnd Make Lots Of Friends =)\n──────-°°__𝗧𝗿𝘂𝘀𝘁 𝗺e 🔐 °__!!>☁️✨❤️ My Owner  ✦͙͙͙͙❥⃝∗⁎.ʚ **prince** ɞ.⁎∗❥⃝**͙✦͙͙͙ ❤️ Love you 😘 ummmma ❤️😍" : msg = threadData.customJoin;
             
             msg = msg
             .replace(/\{name}/g, nameArray.join(', '))

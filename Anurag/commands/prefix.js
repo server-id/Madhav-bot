@@ -2,7 +2,7 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐃𝐀𝐍𝐆𝐄𝐑𝐈𝐎𝐔𝐒 𝐊𝐈𝐍𝐆",
+  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
   description: "given prefix detail",
   commandCategory: "Dành cho Admin",
   usages: "",
